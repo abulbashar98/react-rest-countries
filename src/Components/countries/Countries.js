@@ -40,9 +40,9 @@ function Countries() {
 
         // < div className='country-container'> try it
         <div>
-            <h2>All countries in the World From another file</h2>
+            <h2>All countries in the World From React</h2>
             <h3>Available: {countries.length}</h3>
-            <div className='country-container'>
+            <div className='country-container bg-dark'>
                 {
                     countries.map(country => <Country
                         country={country}
