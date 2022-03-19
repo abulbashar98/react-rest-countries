@@ -1,7 +1,8 @@
 import React from 'react';
+import './country.css'
 
 const Country = (props) => {
-    const { flag, name, capital, region, population, borders } = props.country;
+    const { flags, name, capital, region, population, borders } = props.country;
 
     return (
         // 1. The way to get by one props from the Parent Component.....
@@ -36,9 +37,9 @@ const Country = (props) => {
         // 3. Best way of Using destructuring Object That was sent by the Parent Component and 
         //    then use only variables.......
 
-        <div className='imported-style' style={{ backgroundColor: 'cyan', margin: '10px auto', width: '75vw', borderRadius: '25px', padding: '10px', color: 'blue' }}>
-            <img style={{ width: '50%' }} src={flag} alt="" />
-            <h2>Name: {name}</h2>
+        <div className='imported-style-for-country' style={{ backgroundColor: 'cyan', margin: '10px auto', width: '75%', borderRadius: '25px', padding: '10px', color: 'blue' }}>
+            <h2>{name}</h2>
+            <img style={{ width: '50%' }} src={flags.png} alt="" />
             <h2>Capital: {capital}</h2>
             <h4>Region: {region}</h4>
             <h4>Population: {population}</h4>

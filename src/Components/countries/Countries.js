@@ -38,13 +38,19 @@ function Countries() {
 
         // This is How Send the Whole Object as a property to Child Component.....
 
-        < div >
+        // < div className='country-container'> try it
+        <div>
             <h2>All countries in the World From another file</h2>
             <h3>Available: {countries.length}</h3>
-            {
-                countries.map(country => <Country
-                    country={country}></Country>)
-            }
+            <div className='country-container'>
+                {
+                    countries.map(country => <Country
+                        country={country}
+                        key={country.numericCode}></Country>)
+                    // Giving a unique Prop to each Child Component so that in terms of Changing react can identify that Exact Component and fix it...
+                    // Unique key Should be a unique property of Course lik: id,or a code...
+                }
+            </div>
         </div >
 
 
