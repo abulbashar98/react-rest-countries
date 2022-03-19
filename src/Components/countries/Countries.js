@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import Country from '../country/Country';
 // how to import a file......
 import './Countries.css'
 
 
-function LoadCountries() {
+function Countries() {
 
     const [countries, setCountries] = useState([])
     useEffect(() => {
@@ -23,13 +24,6 @@ function LoadCountries() {
         </div>
     )
 }
-const Country = (props) => {
-    return (
-        <div className='imported-style' style={{ backgroundColor: 'cyan', margin: '10px auto', width: '75vw', borderRadius: '25px', padding: '10px', color: 'blue' }}>
-            <h2>Name: {props.name}</h2>
-            <h2>Capital: {props.capital}</h2>
-        </div>
-    );
-};
 
-export default LoadCountries;
+
+export default Countries;

@@ -1,21 +1,21 @@
 import './App.css';
-import LoadCountries from './Components/countries/Countries';
+import Countries from './Components/countries/Countries';
 import Header from './Components/Header/Header';
 
 
 
 
 
-/*-------------- *\
-Both Container Countries/Load Countries  and single country component in the same folder and
-Same Js File........
-\*-----------------*/
+/*-------------- --------------------------------------------------------------------*\
+Store Container Component Where data is Loaded and Single Child Component Shown in UI in 2
+different Folders. Connect the Child Component through Import
+\*--------------------------------------------------------------------------------------*/
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <LoadCountries></LoadCountries>
+      <Countries></Countries>
     </div>
   );
 }
