@@ -1,9 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
-import LoadCountries from './Components/Country/Country';
+import LoadCountries from './Components/countries/Countries';
 import Header from './Components/Header/Header';
 
+
+
+
+
+/*-------------- *\
+Both Container Countries/Load Countries  and single country component in the same folder and
+Same Js File........
+\*-----------------*/
 
 function App() {
   return (

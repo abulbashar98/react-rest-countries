@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // how to import a file......
-import './Country.css'
+import './Countries.css'
 
 
 function LoadCountries() {
